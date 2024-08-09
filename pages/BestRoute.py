@@ -9,7 +9,7 @@ with st.spinner('경로 계산 중입니다...'):
 
 # API 키 바꾸기
   client = OpenAI(
-      api_key="sk-proj-ewlJZeKxTB3AHFHZhs0TT3BlbkFJilMzAyRaZfFilv73g3uv"
+      api_key="OPENAI_API_KEY"
   )
 
   # 방문지 좌표 (이후 좌표 받아오기)
@@ -90,7 +90,7 @@ with st.spinner('경로 계산 중입니다...'):
 
 
   # 경로 Json 파일 출력
-  g_api_key = "AIzaSyBTLwgOkAdeBGnGlxtDKA4WKBOiKrADq5g"  # Google Maps API 키
+  g_api_key = "G_API_KEY"  # Google Maps API 키
   route_info = []
 
   # 전체 맵
@@ -103,7 +103,7 @@ with st.spinner('경로 계산 중입니다...'):
 
 
   # 도보 거리 계산
-  opsr_api_key = "5b3ce3597851110001cf62482fbd64d65e59432d9f8493c2dddee717"  # OpenRouteService API 키
+  opsr_api_key = "OPSR_API_KEY"  # OpenRouteService API 키
 
   for le in range(len(visit_vector)-1):
     walkRoute = functions.get_walking_directions(opsr_api_key, visit_vector[le], visit_vector[le+1])
