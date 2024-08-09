@@ -287,7 +287,7 @@ else:
         location = region.get(st.session_state.get("city"))
 
         # API 키 입력
-        api_key = 'AIzaSyDrh43CtyY57-b30HT6cPZ4bjSRtHrbE_s'
+        api_key = 'G_API_KEY'
 
         #키워드별 장소 추출 및 중복 장소 제거
         places = []
